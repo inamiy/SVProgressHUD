@@ -142,6 +142,13 @@ static SVProgressHUD *sharedView = nil;
 }
 
 
+#pragma mark - WindowLevel Method
+
++ (void)setWindowLevel:(UIWindowLevel)windowLevel {
+    [SVProgressHUD sharedView].overlayWindow.windowLevel = windowLevel;
+}
+
+
 #pragma mark - Instance Methods
 
 - (id)initWithFrame:(CGRect)frame {

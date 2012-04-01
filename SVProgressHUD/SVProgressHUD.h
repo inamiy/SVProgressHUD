@@ -46,4 +46,6 @@ typedef NSUInteger SVProgressHUDMaskType;
 + (void)showWithStatus:(NSString*)status maskType:(SVProgressHUDMaskType)maskType networkIndicator:(BOOL)show DEPRECATED_ATTRIBUTE; 
 + (void)showWithMaskType:(SVProgressHUDMaskType)maskType networkIndicator:(BOOL)show DEPRECATED_ATTRIBUTE;
 
++ (void)setWindowLevel:(UIWindowLevel)windowLevel;
+
 @end
